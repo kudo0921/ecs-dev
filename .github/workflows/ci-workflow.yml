@@ -3,7 +3,7 @@ name: CI flow for Amazon ECS
 on: [push]
 
 env:
-  SLACK_WEBHOOK: https://xxxxxxxx ##change this URL!!
+  SLACK_WEBHOOK: https://hooks.slack.com/services/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 ##change this URL!!
 
 jobs:
   ci:
@@ -17,7 +17,7 @@ jobs:
 
     - name: Unit Test
       run: cd ${{ github.workspace }}
-    - run: cd sample-webapp && npm install && npm run test:unit
+    - run: cd webapp && npm install && npm run test:unit
 
     # TODO add tests for backend and rest-api
 
