@@ -1,7 +1,7 @@
 {
-    "name": "sample-restapi",
+    "name": "dev-restapi",
     "version": "1.0.0",
-    "description": "sample application for rest api server",
+    "description": "dev application for rest api server",
     "author": "kohekohe",
     "main": "server.js",
     "scripts": {
