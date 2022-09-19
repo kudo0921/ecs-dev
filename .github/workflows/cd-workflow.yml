@@ -73,6 +73,6 @@ jobs:
 
     - name: Deploy to ECS
       run: |
-        aws ecs update-service --service $ECS_WEBAPP_SERVICE --cluster esc-dev-cluster --force-new-deployment
-        aws ecs update-service --service $ECS_RESTAPI_SERVICE --cluster esc-dev-cluster --force-new-deployment
+        aws ecs update-service --service $ECS_WEBAPP_SERVICE --cluster ecs-dev-cluster --force-new-deployment
+        aws ecs update-service --service $ECS_RESTAPI_SERVICE --cluster ecs-dev-cluster --force-new-deployment
 
